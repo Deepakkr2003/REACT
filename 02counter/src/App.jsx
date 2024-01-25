@@ -12,9 +12,9 @@ function App() {
   // let counter = 5
 
   const addValue=()=>{
-    console.log("clicked",counter);
-    counter=counter+1
-    setCounter(counter)
+    // counter=counter+1
+    setCounter(counter+1)
+    // setCounter(prevcounter=>prevcounter+1)  //to increase counter more than one using this 
   }
 
   const removeValue=()=>{
