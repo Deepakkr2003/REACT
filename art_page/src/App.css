@@ -1,0 +1,10 @@
+img{
+    height: 120px;
+    width: 400px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
