@@ -60,7 +60,7 @@ function App() {
         <div>
        
           <span className='text-white mt-5 md:mt-0'>
-            <FaFacebook/>www.faceboo.com/cripumps
+            <FaFacebook/>www.facebook.com/cripumps
           </span>
         </div>
         <div>
