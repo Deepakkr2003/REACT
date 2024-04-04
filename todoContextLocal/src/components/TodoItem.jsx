@@ -1,23 +1,32 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
-import {useTodo} from '../contexts/TodoContext'
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
+import { useTodo } from '../contexts/TodoContext';
 
+// Functional component for a TodoItem
 function TodoItem({ todo }) {
+    // Local state for managing the editable state of a todo item
+    const [isTodoEditable, setIsTodoEditable] = useState(false);
+    // Local state for managing the todo message
+    const [todoMsg, setTodoMsg] = useState(todo.todo);
 
-    const [isTodoEditable,setIsTodoEditable]=useState(false)
-    const [todoMsg,setTodoMsg]=useState(todo.todo)
-    const {updatedTodo,deleteTodo,toggleComplete}=useTodo()
+    // Accessing the updateTodo, deleteTodo, and toggleComplete functions from the TodoContext
+    const { updatedTodo, deleteTodo, toggleComplete } = useTodo();
 
-    const editTodo=()=>{
-        updatedTodo(todo.id,{...todo,todo:todoMsg})
-        setIsTodoEditable(false)
-    }
-    const togglecompleted=()=>{
-        toggleComplete(todo.id)
-    }
+    // Function to edit the todo
+    const editTodo = () => {
+        // Updating the todo in the context
+        updatedTodo(todo.id, { ...todo, todo: todoMsg });
+        // Updating the local state
+        setIsTodoEditable(false);
+    };
 
+    // Function to toggle the completed state of a todo
+    const togglecompleted = () => {
+        toggleComplete(todo.id);
+    };
+
+    // Rendering the TodoItem with a checkbox, input field, edit and delete buttons
     return (
         <div
             className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
@@ -65,4 +74,3 @@ function TodoItem({ todo }) {
 }
 
 export default TodoItem;
-
