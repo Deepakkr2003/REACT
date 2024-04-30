@@ -12,9 +12,10 @@ function Home() {
         <div className='flex flex-col justify-center h-full'>
             <h2 className='text-4xl sm:text-7xl font-bold text-white sm:mt-20'>I'm a Full Stack Developer</h2>
             <p className='text-gray-500 py-4 max-w-md'>
-                I have 1 year of experience building and desgning software.
-                Currently, I love to work on web application using technologies like React, Tailwind, Next JS and Javascript.
+            Welcome to my profile! I'm Deepak Kumar, a passionate Full Stack Developer with a knack for crafting seamless digital experiences. With over 1year of hands-on experience in the realm of web development, I thrive on the dynamic challenges that come with building robust, scalable, and user-friendly applications.
             </p>
+            <br />
+            <p className='text-gray-500 pb-4 max-w-md'>My journey into the world of programming began with a deep curiosity and a love for problem-solving. From my earliest encounters with HTML and CSS, I was fascinated by the power of coding to transform ideas into tangible, interactive solutions. Over the years, I've honed my skills across the entire stack, from front-end technologies like JavaScript, React, and Angular, to back-end frameworks such as Node.js, Express, and Django.</p>
 
             <div>
                 <Link to="project" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
