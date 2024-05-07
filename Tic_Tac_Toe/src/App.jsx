@@ -1,11 +1,12 @@
-import Board from "./TicTacToe/Board"
+import TicTacToe from "./components/TicTacToe/TicTacToe"
+
 
 function App() {
   
 
   return (
     <>
-      <Board/>
+      <TicTacToe/>
     </>
   )
 }
