@@ -17,7 +17,7 @@ function WeatherApp() {
         location: "London"
     });
 
-    let api_key = "93f135f3f1c961ec451ae9285de73d31";
+    let api_key = "";
 
     const[wicon,setWicon]=useState(cloud);
 
