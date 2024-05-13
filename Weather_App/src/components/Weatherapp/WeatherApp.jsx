@@ -7,6 +7,10 @@ import cloud from "../Assests/cloud.png"
 import rain from "../Assests/rain.png"
 import wind from "../Assests/wind.png"
 import snow from "../Assests/snow.png"
+import high from "../Assests/high.png"
+import low from "../Assests/low.png"
+import prec from "../Assests/prec.png"
+import atmos from "../Assests/atmos.jpg"
 import humidity from "../Assests/humidity.png"
 
 function WeatherApp() {
@@ -14,7 +18,13 @@ function WeatherApp() {
         humidity: "64",
         windSpeed: "8",
         temperature: "24",
-        location: "London"
+        location: "London",
+        High: "24",
+        Low: "12",
+        Precipitation: "70",
+        AtmosphericPressure: "1010",
+        Description: "Moderate Rain"
+
     });
 
     let api_key = "";
@@ -36,7 +46,12 @@ function WeatherApp() {
             humidity: Math.floor(data.main.humidity),
             windSpeed: Math.floor(data.wind.speed),
             temperature: Math.floor(data.main.temp),
-            location: data.name
+            location: data.name,
+            High: Math.floor(data.main.temp_min),
+            Low: Math.floor(data.main.temp_max),
+            Precipitation: data.clouds.all,
+            AtmosphericPressure: data.main.pressure,
+            Description: data.weather[0].description
         });
 
         if(data.weather[0].icon==="01d" || data.weather[0].icon==="01n"){
@@ -67,7 +82,7 @@ function WeatherApp() {
     }
 
     return (
-        <div className='w-1/2 h-auto m-auto mt-24 rounded-lg bg-gradient-to-b from-blue-950 to-blue-600'>
+        <div className='w-1/2 h-auto m-auto mt-4 rounded-lg bg-gradient-to-b from-blue-950 to-blue-600'>
             <div className='flex justify-center gap-6 pt-8'>
                 <input type="text" placeholder='Search' className='cityInput flex w-64 h-12 bg-white border-none outline-none rounded-2xl pl-8 text-gray-400 text-xl font-medium' />
                 <div className='flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer'>
@@ -85,17 +100,51 @@ function WeatherApp() {
                     <img src={humidity} alt="" className='mt-3' />
                     <div className='text-2xl font-medium'>
                         <div className='humidity-per'>{weatherData.humidity}%</div>
-                        <div className='text-xl font-medium'>Humidity</div>
+                        <div className='text-xl font-medium text-violet-400'>Humidity</div>
                     </div>
                 </div>
                 <div className='m-auto flex items-start gap-12 '>
                     <img src={wind} alt="" className='mt-3' />
                     <div className='text-2xl font-medium'>
                         <div className='wind-speed'>{weatherData.windSpeed} km/h</div>
-                        <div className='text-xl font-medium'>Wind Speed</div>
+                        <div className='text-xl font-medium text-cyan-500'>Wind Speed</div>
                     </div>
                 </div>
             </div>
+
+
+            <div className='mt-2 text-white flex justify-center '>
+                    <div className='m-auto flex items-start gap-12 '>
+                    <img src={high} alt="" className='mt-3' />
+                        <div className='text-2xl font-medium'>
+                            <div className='humidity-per text-white '>{ weatherData.High }&deg;C</div>
+                            <div className='text-xl  text-red-400 font-medium'>High</div>
+                        </div>
+                    </div>
+                    <div className='m-auto flex items-start gap-12 '>
+                    <img src={low} alt="" className='mt-3' />
+                        <div className='text-2xl font-medium'>
+                            <div className='wind-speed text-white'>{ weatherData.Low }&deg;C</div>
+                            <div className='text-xl text-green-400 font-medium'>Low</div>
+                        </div>
+                    </div>
+                </div>
+                <div className='mt-2 text-white flex justify-center pb-6'>
+                    <div className='m-auto flex items-start gap-12'>
+                    <img src={prec} alt="" className='mt-3' />
+                        <div className='text-2xl font-medium '>
+                            <div className='humidity-per text-white '>{ weatherData.Precipitation }%</div>
+                            <div className='text-xl text-orange-400 font-medium '>Precipitation</div>
+                        </div>
+                    </div>
+                    <div className='m-auto flex items-start gap-12  '>
+                    <img src={atmos} alt="" className='mt-3' />
+                        <div className='text-2xl font-medium '>
+                            <div className='wind-speed text-white '>{ weatherData.AtmosphericPressure }hPa</div>
+                            <div className='text-xl  text-orange-400 font-medium '>Atmospheric Pressure</div>
+                        </div>
+                    </div>
+                </div>
         </div>
     );
 }
