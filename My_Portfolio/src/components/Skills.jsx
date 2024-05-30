@@ -76,7 +76,7 @@ function Skills() {
     from-gray-800 to-black w-hull h-full'>
       <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
         <div>
-          <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>My Skills</p>
+          <p className='text-4xl font-bold border-b-4 border-white p-2 inline'>My Skills</p>
           <p className='py-6 text-2xl font-semibold'>I love these Technologies</p>
         </div>
 
@@ -90,7 +90,7 @@ function Skills() {
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
               >
             <img src={src} alt="" className='w-20 mx-auto'/>
-            <p className='mt-4'>{title}</p>
+            <p className='mt-4 text-gray-400 font-bold'>{title}</p>
           </div>
             ))
           }

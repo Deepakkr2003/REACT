@@ -5,7 +5,7 @@ import snake from '../assests/Project/snake.jpg'
 import bmi from '../assests/Project/bmi.png'
 import calc from '../assests/Project/calc.jpg'
 import clock from '../assests/Project/clock.png'
-import car from '../assests/Project/car.jpg'
+import weather from '../assests/Project/weather.png'
 import currency from '../assests/Project/currency.jpg'
 import password from '../assests/Project/password.png'
 import todo from '../assests/Project/todo.png'
@@ -43,9 +43,9 @@ function Projects() {
         } ,  
         {
            id:5, 
-           src:car,
-           demolink:'https://car-animated.netlify.app',
-           githubLink:'https://github.com/Deepakkr2003/PROJECT/tree/main/Car_Animated',
+           src:weather,
+           demolink:'https://my-weather-app2.netlify.app',
+           githubLink:'https://github.com/Deepakkr2003/REACT/tree/main/Weather_App',
         } ,  
         {
            id:6, 
@@ -74,8 +74,8 @@ function Projects() {
         {
            id:10, 
            src:webpage,
-           demolink:'https://netartwebpage.netlify.app',
-           githubLink:'https://github.com/Deepakkr2003/REACT/tree/main/art_page',
+           demolink:'https://envatopage.netlify.app/',
+           githubLink:'https://github.com/Deepakkr2003/REACT/tree/main/envato_market',
         } ,  
         {
            id:11, 
@@ -93,11 +93,11 @@ function Projects() {
     ]
 
   return (
-    <div name='project' className='bg-gradient-to-b from-lime-300 to-green-200 w-full text-white md:h-full '>
+    <div name='project' className='bg-gradient-to-b from-custom-bg to-custom-dark w-full text-white md:h-full '>
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8 '>
-            <p className='text-4xl font-bold inline border-b-4 border-gray-500 text-gray-600' >Projects</p>
-            <p className='py-6 text-2xl font-semibold text-gray-500'>Check out some of my work right here</p>
+            <p className='text-4xl font-bold inline border-b-4 border-white text-white' >Projects</p>
+            <p className='py-6 text-2xl font-semibold text-white'>Check out some of my work right here</p>
         </div>
 
 
@@ -110,8 +110,8 @@ function Projects() {
                     className='rounded-md duration-200 hover:scale-105'
                 />
                 <div className='flex items-center justify-center'>
-                <a href={demolink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-500 font-bold'>Demo</a>
-                <a href={githubLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-500 font-bold'>Code</a>
+                <a href={demolink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-400 font-bold'>Demo</a>
+                <a href={githubLink} target="_blank" rel="noopener noreferrer" className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-gray-400 font-bold'>Code</a>
                 </div>
             </div>
         ))}

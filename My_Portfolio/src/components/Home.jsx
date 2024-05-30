@@ -15,7 +15,7 @@ function Home() {
 
   useEffect(()=>{
     const typed = new Typed(el.current,{
-      strings:["Fronted Developer" , "Backend Developer" , "Competitive Programmer"],
+      strings:["Fronted Developer" , "Backend Developer" ],
       startDelay:100,
       typeSpeed:100,
       backSpeed:10,
@@ -28,19 +28,19 @@ function Home() {
   },[]);
 
   return (
-    <div name="home" className='h-full w-full bg-gradient-to-b from-purple-300    to-green-100 '>
+    <div name="home" className='h-full w-full bg-gradient-to-b from-slate-900 via-slate-800   to-slate-700 '>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row pb-4'>
         <div className='flex flex-col justify-center h-full'>
             <div>
-            <h2 className='text-2xl mt-24 sm:text-4xl font-semibold text-gray-600 sm:mt-20'>Hi, I am</h2>
-            <h2 className='text-4xl  sm:text-6xl font-semibold text-gray-600 sm:mt-4'>Deepak Kumar</h2>
-            <h2 className='text-2xl sm:text-4xl font-semibold text-gray-600 sm:mt-4'>I'm  <span className='font-bold underline' ref={el}></span></h2>
+            <h2 className='text-2xl mt-24 sm:text-4xl font-semibold text-white sm:mt-20'>Hi, I am</h2>
+            <h2 className='text-4xl  sm:text-6xl font-semibold text-white sm:mt-4'>Deepak Kumar</h2>
+            <h2 className='text-2xl sm:text-4xl font-semibold text-white sm:mt-4'>I'm  <span className='font-bold underline' ref={el}></span></h2>
             </div>
-            <p className='text-gray-500 pt-8 max-w-md text-xl'>
+            <p className='text-gray-400 font-semibold pt-8 max-w-md text-xl mb-4'>
             Welcome to my profile! I'm Deepak Kumar, a passionate Full Stack Developer with a knack for crafting seamless digital experiences. With over 1year of hands-on experience in the realm of web development, I thrive on the dynamic challenges that come with building robust, scalable, and user-friendly applications.
+            I can provide clean code and pixel perfect design.I also make a website more & more interactive with webanimations.
             </p>
-            <br />
-            <p className='text-gray-500 pb-4 max-w-md text-xl'>My journey into the world of programming began with a deep curiosity and a love for problem-solving. From my earliest encounters with HTML and CSS, I was fascinated by the power of coding to transform ideas into tangible, interactive solutions. Over the years, I've honed my skills across the entire stack, from front-end technologies like JavaScript, React, and Angular, to back-end frameworks such as Node.js, Express.</p>
+           
 
 
             <div className='flex text-4xl space-x-5 my-4 text-white lg:hidden'>
@@ -51,7 +51,7 @@ function Home() {
             </div>
 
             <div>
-                <Link to="project" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                <Link to="project" smooth duration={500} className='group text-white font-bold w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                     Projects
                     <span className='group-hover:rotate-90 duration-300'>
                         <MdKeyboardArrowRight size={25} className='ml-1'/>
