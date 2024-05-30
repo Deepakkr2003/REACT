@@ -36,7 +36,7 @@ function Home() {
             <h2 className='text-4xl  sm:text-6xl font-semibold text-white sm:mt-4'>Deepak Kumar</h2>
             <h2 className='text-2xl sm:text-4xl font-semibold text-white sm:mt-4'>I'm  <span className='font-bold underline' ref={el}></span></h2>
             </div>
-            <p className='text-gray-400 font-semibold pt-8 max-w-md text-xl mb-4'>
+            <p className='text-gray-400 font-medium pt-8 max-w-md text-xl mb-4'>
             Welcome to my profile! I'm Deepak Kumar, a passionate Full Stack Developer with a knack for crafting seamless digital experiences. With over 1year of hands-on experience in the realm of web development, I thrive on the dynamic challenges that come with building robust, scalable, and user-friendly applications.
             I can provide clean code and pixel perfect design.I also make a website more & more interactive with webanimations.
             </p>
