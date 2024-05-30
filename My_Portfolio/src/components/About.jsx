@@ -14,7 +14,7 @@ function About() {
         </div>
         <h1 className='text-2xl font-semibold text-white'>Full Stack Developer</h1>
         <p className='text-xl mt-10 text-gray-400 font-medium'>
-            As a Full Stack Developer, I specialize in bridging the gap between design and functionality, bringing concepts to life with clean, ~efficient code. Whether it's crafting intuitive user interfaces, architecting scalable backend systems, or optimizing database performance, I approach each project with a blend of creativity and technical expertise. From concept to deployment, I'm committed to delivering high-quality solutions that exceed expectations.
+            As a Full Stack Developer, I specialize in bridging the gap between design and functionality, bringing concepts to life with clean, efficient code. Whether it's crafting intuitive user interfaces, architecting scalable backend systems, or optimizing database performance, I approach each project with a blend of creativity and technical expertise. From concept to deployment, I'm committed to delivering high-quality solutions that exceed expectations.
         </p>
         <br/>
         <p className='text-xl text-gray-400 mb-6 font-medium'>
