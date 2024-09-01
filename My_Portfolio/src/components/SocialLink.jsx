@@ -43,7 +43,7 @@ function SocialLink() {
             Resume <BsFillPersonLinesFill size={30}/>
         </>
       ),
-      href:"/my_resume.pdf",
+      href:"/Deepak_resume.pdf",
       style:'rounded-br-md',
       download:true,
     }
