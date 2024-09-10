@@ -22,10 +22,18 @@ function Navbar() {
         },
         {
             id: 4,
-            link: 'project'
+            link: 'experience'
         },
         {
             id: 5,
+            link: 'achievements'
+        },
+        {
+            id: 6,
+            link: 'project'
+        },
+        {
+            id: 7,
             link: 'contact'
         },
     ]
