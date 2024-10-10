@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'Cheeseburga';
+    src: url('./assets/fonts/cheeseburga.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+.gradient-text {
+    background: linear-gradient(180deg, #FFF280 0%, #7EFF5E 100%);
+    -webkit-background-clip: text;  /* For Safari */
+    background-clip: text;           /* Standard */
+    color: transparent;              /* Make the text color transparent */
+    
+}
+
+.custom-border {
+border: 11px solid #0F1B29;     
+padding: 0.2rem;              
+display: inline-block;           
+border-radius: 0.5rem;           
+margin: 0 1px;                   
+}
+
+  
+.custom-gradient {
+    background: linear-gradient(180deg, #FFF280 8.61%, #FFA800 36.76%);
+    -webkit-background-clip: text;  /* For Safari */
+    background-clip: text;           /* Standard */
+    color: transparent; 
+}
+
+.custom-color{
+  
+    background: radial-gradient(42.38% 44.19% at 50.14% 67.33%, #FFF280 0%, #FFC700 100%) 
+
+}
+
+  
+  
+  
+  
+
+
+  
