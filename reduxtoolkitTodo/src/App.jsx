@@ -1,30 +1,16 @@
-/* eslint-disable no-unused-vars */ // Disable linting for unused variables
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import TaskDashboard from './components/Dashboard';
 
-// Importing CSS file for styling
-import './App.css'
-
-// Importing AddTodo component
-import AddTodo from './components/AddTodo'
-
-// Importing Todos component
-import Todos from './components/Todos'
-
-// Main component App
-function App() {
-  // Render the components
+const App = () => {
   return (
-    <>
-      {/* Header */}
-      <h1 className='flex justify-center text-3xl mt-5 font-bold'>MANAGE YOUR TODOS</h1>
-      
-      {/* AddTodo component to add new todos */}
-      <AddTodo/>
+    <Router>
+      <Routes>
+        <Route path="/tasks" element={<TaskDashboard />} />
+        <Route path="/" element={<Navigate to="/tasks" replace />} /> 
+      </Routes>
+    </Router>
+  );
+};
 
-      {/* Todos component to display todos */}
-      <Todos/>
-    </>
-  )
-}
-
-// Export the App component
-export default App
+export default App;
