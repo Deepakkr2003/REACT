@@ -9,9 +9,10 @@ import koin2 from '../assets/koin2.png'
 
 function About() {
   return (
-    <div 
+   <div className='px-3 lg:px-0 '>
+     <div 
         name="about"
-        className='w-full h-full md:w-4/6 md:ml-5 pt-20 bg-white rounded-lg my-5'
+        className='w-full h-full lg:w-[68%] lg:ml-5 pt-20 bg-white rounded-lg my-5 px-2 lg:px-0'
     >
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-4'>
@@ -42,27 +43,31 @@ function About() {
         <div className='mt-5 border-t-2 border-gray-300'>
             <h1 className='mt-5 text-2xl font-bold'>Already Holding Bitcoin?</h1>
             <div className='  grid grid-cols-1 md:grid-cols-2'>
-                <div className='bg-gradient-to-b from-violet-500 to-orange-300 flex justify-start rounded-xl my-4 md:mx-4'>
+            <div className='bg-[linear-gradient(135deg,_#79F1A4_0%,_#0E5CAD_100%)] flex justify-start rounded-xl my-4 md:mx-4'>
+  
+
                   
                       <img src={koin1} alt="koin1" className='mx-2 my-2 w-1/6  rounded-xl'/>
                    
                    <div className='ml-8'>
-                      <h1 className='text-3xl text-white'>Calculate your <br/> Profits </h1>
+                      <h1 className='text-xl md:text-3xl  text-white font-semibold'>Calculate your <br/> Profits </h1>
                       
-                      <div className=' bg-white my-4 rounded-lg mr-12 hover:cursor-pointer'>
+                      <div className=' bg-white my-4 rounded-md md:rounded-lg mr-12 hover:cursor-pointer px-2'>
                           <h1 className=' my-1 ml-1 text-xl font-bold '>Check  Now <i class="fa-solid fa-arrow-right"></i></h1>
                       </div>
                       
                    </div>
                 </div>
-                <div className='bg-gradient-to-b from-yellow-500 to-red-300 flex justify-start  rounded-xl my-4'>
+                <div className='bg-[linear-gradient(135.73deg,_#FF9865_0%,_#EF3031_110.55%)] flex justify-start rounded-xl my-4 md:mx-4'>
+  
+
                   
                       <img src={koin2} alt="koin2" className='mx-2 my-2 w-1/6 rounded-xl'/>
             
                    <div className='ml-8'>
-                      <h1 className='text-3xl text-white'>Calculate your tax </h1>
-                      <h1 className='text-3xl text-white'>liability</h1>
-                      <div className='w-2/3 bg-white my-4 rounded-lg hover:cursor-pointer'>
+                      <h1 className='text-xl md:text-3xl text-white font-semibold'>Calculate your tax </h1>
+                      <h1 className='text-xl md:text-3xl  text-white font-semibold '>liability</h1>
+                      <div className=' bg-white my-4 rounded-md md:rounded-lg mr-12 hover:cursor-pointer px-2'>
                           <h1 className=' my-1 ml-1 text-xl font-bold '>Check  Now <i class="fa-solid fa-arrow-right"></i></h1>
                       </div>
                    </div>
@@ -70,7 +75,7 @@ function About() {
                 </div>
 
             </div>
-            <div className='mt-5 border-t-2 border-gray-300'>
+            <div className='mt-5 border-t-2 border-gray-300 hidden lg:block'>
                 <p className='my-5 '> 
                   Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam massa vel convallis duis ac. Mi adipiscing semper scelerisque porttitor pulvianr nunc risus. Fermentum potenti iaculis lacinia congue ipsum fames amet dui. Purus ultrices tincidunt volutpat in eget. Ullamcorper dui
                 </p>
@@ -78,6 +83,7 @@ function About() {
         </div>
       </div>
     </div>
+   </div>
   )
 }
 

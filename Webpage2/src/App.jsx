@@ -9,12 +9,15 @@ import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { RiGraduationCapLine } from "react-icons/ri";
 import { RiCapsuleLine } from "react-icons/ri";
 import { BiMessageDetail } from "react-icons/bi";
-
-
+import Location from "./components/Location";
+import Expertise from "./components/Expertise";
+import Gender from "./components/Gender"
+import Fees from "./components/Fees"
+import Languages from "./components/Languages"
 function App() {
   return (
     <div>
-      <div className="w-screen h-20 bg-yellow-100">
+      <div className="w-full h-20 bg-yellow-100">
         <div className="w-auto h-auto ml-10 flex justify-around">
           <div>
             <h1 className="text-4xl text-green-800 font-semibold mt-3">AMRUTAM</h1>
@@ -34,15 +37,15 @@ function App() {
       <div className="items-center border h-auto bg-gray-100 py-10 md:py-20" style={{backgroundImage: `url(${image2})`, backgroundSize: 'cover', backgroundPosition: 'center center'}}>
         <h1 className="font-poppins text-center text-black text-3xl md:text-5xl lg:text-4xl font-medium">Find Expert Doctors For An In-Clinic Session Here</h1>
         <div className="flex items-center justify-center mt-8">
-          <div className="flex bg-white rounded-lg w-48 h-12 items-center justify-center border-2 border-gray-400">
-            <div className="text-green-800 mr-2">
-            <FaLocationDot size={20}/>
-            </div>
-            <div className="text-gray-500 mr-2">Select Location</div>
-            <div>
-              <MdKeyboardArrowDown size={30}/>
-            </div>
-          </div>
+        <div className="flex bg-white border-2 border-gray-400 items-center space-x-3 ">
+      <div className="text-green-800">
+        <FaLocationDot size={24} />
+      </div>
+
+      <div className="text-gray-600 text-sm font-medium  w-full">
+      <Location />
+      </div>
+    </div>
           <div className="ml-4 w-84">
             <div className="relative">
               <input type="text" placeholder="eg. Doctor, specialisation, clinic name " className="w-96 h-12 border-2 border-gray-400 rounded-lg"/>
@@ -58,31 +61,20 @@ function App() {
 
       
       <div className="flex mt-8 justify-evenly">
-          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 font-medium w-36 justify-between cursor-pointer transition ease-out transform hover:scale-105">
-              <div>Expertise</div>
-              <div className="ml-4 ">
-                  <MdKeyboardArrowDown size={30}/>
-              </div>
+          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 h-14 font-medium w-50 justify-between cursor-pointer transition ease-out transform hover:scale-105 ">
+              <div><Expertise/></div>
+              
           </div>
-          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 font-medium w-36 justify-between cursor-pointer transition ease-out transform hover:scale-105">
-              <div>Gender</div>
-              <div className="ml-4 ">
-              <MdKeyboardArrowDown size={30}/>
-              </div>
+          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2  h-14 font-medium w-50 justify-between cursor-pointer transition ease-out transform hover:scale-105">
+            <Gender/>
           </div>
-          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 font-medium w-36 justify-between cursor-pointer transition ease-out transform hover:scale-105">
-              <div>Fees</div>
-              <div className="ml-4 ">
-              <MdKeyboardArrowDown size={30}/>
-              </div>
+          <div className="flex bg-gray-300 text-gray-500 text-center rounded-lg p-2 h-14 font-medium w-56 justify-between cursor-pointer transition ease-out transform hover:scale-105">
+              <Fees/>
           </div>
-          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 font-medium w-36 justify-between cursor-pointer transition ease-out transform hover:scale-105">
-              <div>Languages</div>
-              <div className="ml-4">
-              <MdKeyboardArrowDown size={30}/>
-              </div>
+          <div className="flex bg-gray-300 text-gray-500 rounded-lg p-2 h-14 font-medium w-56 justify-between cursor-pointer transition ease-out transform hover:scale-105">
+              <Languages/>
           </div>
-          <div className="flex bg-green-200 text-green-500 rounded-lg p-2 font-medium w-36 justify-between cursor-pointer transition ease-out transform hover:scale-105">
+          <div className="flex bg-green-200 text-green-500 rounded-lg p-2 h-12 font-medium w-56 justify-between cursor-pointer transition ease-out transform hover:scale-105">
               <div>All filters</div>
               <div className="ml-4 ">
               <MdKeyboardArrowDown size={30}/>
@@ -95,7 +87,7 @@ function App() {
 
 
 
-    <div className="flex justify-end mt-10 pr-24">
+    <div className="flex justify-end mt-10 pr-24 ">
     <div className="flex bg-green-100 p-2 rounded-2xl justify-center items-center cursor-pointer transition ease-out transform hover:scale-105 mx-4">
         <div>Hair Care</div>
         <div className="text-gray-500 font-semibold ml-2">
@@ -107,6 +99,7 @@ function App() {
         <div className="text-gray-500 font-semibold ml-2">
             <RxCross2 size={20}/>
         </div>
+        
     </div>
     <div className="flex bg-green-100 p-2 rounded-2xl justify-center items-center cursor-pointer transition ease-out transform hover:scale-105 mx-4">
         <div>Rs.0-Rs.500</div>

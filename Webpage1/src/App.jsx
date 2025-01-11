@@ -17,6 +17,7 @@ import { FiFacebook } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { PiYoutubeLogoLight } from "react-icons/pi";
 import { LuTwitter } from "react-icons/lu";
+import Calendar from './Calendar'
 
 
 
@@ -28,7 +29,7 @@ function App() {
   return (
     <div>
 
-          <div className="w-screen h-20 bg-yellow-100">
+          <div className="w-full h-20 bg-yellow-100">
             <div className="w-auto h-auto ml-10 flex justify-around">
               <div>
                 <h1 className="text-4xl text-green-800 font-semibold mt-3">AMRUTAM</h1>
@@ -339,9 +340,7 @@ function App() {
         <div className="flex mx-10 mt-10 items-center text-center">
             <p className="text-xl font-semibold mx-2">Pick a time Slot</p>
             <div className="mt-4 mx-8 w-80 flex h-0 border border-gray-400 border-opacity-50"></div>
-            <div className="border border-gray-400 rounded-full p-2 mt-2 cursor-pointer transition ease-out hover:scale-105">
-                <FaRegCalendar/>
-            </div>
+            <Calendar/>
 
         </div>
 
@@ -352,11 +351,11 @@ function App() {
                         <h1 className='text-lg text-gray-500'>10 Slots</h1>
                     </div>
                     <div className='border w-40  border-gray-300 p-2 text-center rounded-xl mx-2 cursor-pointer transition ease-out hover:scale-105'>
-                        <h1 className='text-lg text-green-800 font-medium'>Tue,10 Oct</h1>
+                        <h1 className='text-lg text-green-800 font-medium'>Tue,11 Oct</h1>
                         <h1 className='text-lg text-gray-500'><span className='text-red-500'>02 Slots</span></h1>
                     </div>
                     <div className='border w-40 border-gray-300 p-2 text-center rounded-xl cursor-pointer transition ease-out hover:scale-105'>
-                        <h1 className='text-lg font-medium'>Wed,10 Oct</h1>
+                        <h1 className='text-lg font-medium'>Wed,12 Oct</h1>
                         <h1 className='text-lg text-gray-500'><span className='text-yellow-500'>05 Slots</span></h1>
                     </div>
                     <div className='text-gray-400 mr-4 ml-2'><IoIosArrowDropright size={20}/></div>

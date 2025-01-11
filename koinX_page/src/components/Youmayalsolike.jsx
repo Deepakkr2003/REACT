@@ -17,10 +17,11 @@ function Youmayalsolike() {
     }, []);
 
     return (
-        <div className='w-full h-full  bg-white rounded-lg my-5'>
+        <div className='px-3 lg:px-0'>
+            <div className='w-full h-full  bg-white rounded-lg my-5'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 
-                    <h1 className='ml-10 text-2xl font-bold mt-12'>You May Also Like</h1>
+                    <h1 className='mb-5 text-2xl font-bold mt-12'>You May Also Like</h1>
                     <div className="mt-4 overflow-x-auto">
                         <ul className="flex">
                             {trendingCoins.map((coin, index) => (
@@ -42,7 +43,7 @@ function Youmayalsolike() {
                         </ul>
                     </div>
                 
-                <h1 className='ml-10 text-2xl font-bold mt-12'>Trending Coins</h1>
+                <h1 className='mb-5 text-2xl font-bold mt-12'>Trending Coins</h1>
                 <div className="mt-4 overflow-x-auto">
                     <ul className="flex">
                         {trendingCoins.map((coin, index) => (
@@ -65,6 +66,7 @@ function Youmayalsolike() {
                 </div>
                 </div>
             </div>
+        </div>
        
     );
 }

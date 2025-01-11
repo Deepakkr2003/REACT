@@ -4,7 +4,8 @@ import koin3 from '../assets/koin3.png'
 
 function Tokenomics() {
   return (
-    <div className='w-full h-full md:w-4/6 md:ml-5 pt-20 bg-white rounded-lg my-5'>
+    <div className='px-3 lg:px-0 hidden lg:block'>
+      <div className='w-full h-full lg:w-[68%] lg:ml-5 pt-20 bg-white rounded-lg my-5 px-2 md:px-0'>
       <div className='bg-white rounded-lg max-w-screen-lg p-4 mx-auto  justify-center w-full h-full'>
         <h1 className='font-bold text-3xl pl-5 py-4'>Tokenomics</h1>
         <h2 className='font-semibold text-2xl pl-5'>Initial Distribution</h2>
@@ -14,6 +15,7 @@ function Tokenomics() {
         </p>
 
       </div>
+    </div>
     </div>
   )
 }

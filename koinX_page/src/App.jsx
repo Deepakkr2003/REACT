@@ -18,7 +18,7 @@ function App() {
     <Navbar />
     <Bitcoin/>
     <Performance/>
-    <Sentiment/>
+    <Sentiment />
     <About />
     <Tokenomics/>
     <Team/>

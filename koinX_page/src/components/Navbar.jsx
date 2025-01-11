@@ -29,16 +29,17 @@ function Navbar() {
     })
 
   return (
-    <div className='flex justify-between items-center w-full h-20 text-white  bg-white px-4 rounded-b-lg'>
-        <div>
-            <img src={koin} alt="koin" className='w-20'/>
-        </div >
-        <ul className='hidden md:flex'>
+    <div className='flex  items-center  w-[100%] h-20 text-white  bg-white px-4 rounded-b-lg'>
+        <img src={koin} alt="koin" className='w-20'/>
+
+    <div className='flex justify-end items-center  w-[100%] h-20 text-white  bg-white px-4 rounded-b-md'>
+       
+        <ul className='hidden  md:flex'>
 
             {links.map(({id,link})=>(
                 <li 
                 key={id}
-                className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>
+                className='px-4 cursor-pointer capitalize font-medium text-deepBlue hover:scale-105 duration-200 '>
                     {link}
                 </li>
             ))}
@@ -66,7 +67,7 @@ function Navbar() {
             </ul> 
         )}
 
-           
+        </div >
     </div>
   )
 }
