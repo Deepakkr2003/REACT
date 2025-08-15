@@ -2,12 +2,18 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from 'react'
 import Typed from 'typed.js';
-import MyImage from '../assests/my_pic.jpg'
+import MyImage from '../assests/my_pic.jpeg'
 import { MdKeyboardArrowRight } from "react-icons/md";
 import {Link} from 'react-scroll'
 import {FaGithub,FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+
+const colors = [
+  'bg-gradient-to-r from-purple-400 via-pink-500 to-red-500',
+  'bg-gradient-to-r from-yellow-400 via-green-500 to-blue-500',
+  'bg-gradient-to-r from-red-400 via-orange-500 to-yellow-500'
+];
 
 function Home() {
 
@@ -27,6 +33,44 @@ function Home() {
     }
   },[]);
 
+  const lastMousePosition = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const { clientX: currentX, clientY: currentY } = e;
+      const { x: lastX, y: lastY } = lastMousePosition.current;
+      const deltaX = currentX - lastX;
+      const deltaY = currentY - lastY;
+
+      lastMousePosition.current = { x: currentX, y: currentY };
+
+      const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+      const colorClass = colors[Math.floor(Math.random() * colors.length)];
+
+      const blast = document.createElement('div');
+      blast.className = `color-blast ${colorClass}`;
+      blast.style.width = '100px';
+      blast.style.height = '100px';
+      blast.style.left = `${currentX}px`;
+      blast.style.top = `${currentY + window.scrollY}px`; // Adjust for scrolling
+      blast.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+      document.body.appendChild(blast);
+
+      blast.addEventListener('animationend', () => {
+        blast.remove();
+      });
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+
+
+
   return (
     <div name="home" className='h-full w-full bg-gradient-to-b from-slate-900 via-slate-800   to-slate-700 '>
       <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row pb-4'>
@@ -37,8 +81,7 @@ function Home() {
             <h2 className='text-2xl sm:text-4xl font-semibold text-white sm:mt-4'>I'm  <span className='font-bold underline' ref={el}></span></h2>
             </div>
             <p className='text-gray-400 font-medium pt-8 max-w-md text-xl mb-4'>
-            Welcome to my profile! I'm Deepak Kumar, a passionate Full Stack Developer with a knack for crafting seamless digital experiences. With over 1year of hands-on experience in the realm of web development, I thrive on the dynamic challenges that come with building robust, scalable, and user-friendly applications.
-            I can provide clean code and pixel perfect design.I also make a website more & more interactive with webanimations.
+                Welcome to my profile! I’m Deepak Kumar, a passionate MERN Stack Developer specializing in clean code, pixel-perfect designs, and interactive web animations. Skilled in HTML, CSS, JavaScript, React.js, Redux, Node.js, Express.js, and Tailwind CSS.            
             </p>
            
 
@@ -47,7 +90,7 @@ function Home() {
               <div className='bg-gray-500 rounded-full p-2 cursor-pointer '><a href="https://www.linkedin.com/in/deepak-kumar-544152247/" target="_blank" rel='noreferrer'><FaLinkedin/></a> </div>
               <div className='bg-gray-500 rounded-full p-2 cursor-pointer '><a href="https://github.com/Deepakkr2003" target="_blank" rel='noreferrer'><FaGithub/></a> </div>
               <div className='bg-gray-500 rounded-full p-2 cursor-pointer '><a href="mailto:foo@gmail.com" target="_blank" rel='noreferrer'><HiOutlineMail/></a> </div>
-              <div className='bg-gray-500 rounded-full p-2 cursor-pointer '><a href="/my_resume.pdf" target="_blank" rel='noreferrer' download={true}><BsFillPersonLinesFill/></a> </div>
+              <div className='bg-gray-500 rounded-full p-2 cursor-pointer '><a href="/Deepak_Kumar.pdf" target="_blank" rel='noreferrer' download={true}><BsFillPersonLinesFill/></a> </div>
             </div>
 
             <div>

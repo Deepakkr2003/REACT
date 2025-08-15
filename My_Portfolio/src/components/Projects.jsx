@@ -13,46 +13,49 @@ import webpage from '../assests/Project/webpage.png'
 import guess from '../assests/Project/guess.png'
 import tic from '../assests/Project/tic-tac-toe.jpg'
 import infinite from '../assests/Project/unlim.png'
+import eLibrary from '../assests/Project/eLibrary.png'
+import tourease from '../assests/Project/ApnaSarthi.jpeg'
 
 
 function Projects() {
    const projects = [
       {
          id: 1, 
-         title: 'Snake Game',
-         src: snake,
-         demolink: 'https://snake-game-minia.netlify.app/',
-         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/SnakeGame',
-         description: 'A classic snake game built with JavaScript and HTML5 Canvas.',
-         technologies: ['JavaScript', 'HTML5', 'CSS']
+         title: 'eLibrary',
+         src: eLibrary,
+         demolink: 'https://elibraryai.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/eLibrary',
+         description: 'Instant doubt-solving through an integrated AI chatbot.',
+         technologies:['HTML', 'Tailwind', 'JavaScript', 'React', 'ReactRouter', 'FastAPI', 'langchain', 'faiss', 'Chromadb']
       },
       {
          id: 2, 
-         title: 'BMI Calculator',
-         src: bmi,
-         demolink: 'https://bmi-calculator-11.netlify.app/',
-         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/BMI',
-         description: 'A BMI calculator that helps users determine their Body Mass Index.',
-         technologies: ['JavaScript', 'HTML5', 'CSS']
-      },  
+         title: 'TourEase',
+         src: tourease,
+         demolink: 'https://apnasarhtiwebsite1.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/ApnaSarthi',
+         description: 'A website for booking tour vehicles and leases in Bihar.',
+         technologies: ['HTML', 'Tailwind CSS', 'JavaScript', 'React', 'React Router']
+      },
       {
          id: 3, 
-         title: 'Calculator',
-         src: calc,
-         demolink: 'https://calculator-js12.netlify.app',
-         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/Calculator_1',
-         description: 'A simple calculator for performing basic arithmetic operations.',
-         technologies: ['JavaScript', 'HTML5', 'CSS']
-      },  
+         title: 'To-Do App',
+         src: todo,
+         demolink: 'https://my-todoapp-react1.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/reduxtoolkitTodo',
+         description: 'A to-do app to help users manage their tasks effectively.',
+         technologies: ['React', 'Redux Toolkit', 'CSS']
+      },
+      
       {
          id: 4, 
-         title: 'Digital Clock',
-         src: clock,
-         demolink: 'https://digital-1-clock.netlify.app',
-         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/DigitalClock',
-         description: 'A digital clock displaying the current time in a user-friendly interface.',
-         technologies: ['JavaScript', 'HTML5', 'CSS']
-      },  
+         title: 'Currency Converter',
+         src: currency,
+         demolink: 'https://mycurrencyconvertorapp.netlify.app',
+         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/currencyConvertor',
+         description: 'A currency converter that helps users convert between different currencies.',
+         technologies: ['React', 'API', 'CSS']
+      }, 
       {
          id: 5, 
          title: 'Weather App',
@@ -61,18 +64,9 @@ function Projects() {
          githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/Weather_App',
          description: 'A weather application showing current weather data fetched from an API.',
          technologies: ['React', 'API', 'CSS']
-      },  
+      },   
       {
          id: 6, 
-         title: 'Currency Converter',
-         src: currency,
-         demolink: 'https://mycurrencyconvertorapp.netlify.app',
-         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/currencyConvertor',
-         description: 'A currency converter that helps users convert between different currencies.',
-         technologies: ['React', 'API', 'CSS']
-      },  
-      {
-         id: 7, 
          title: 'Password Generator',
          src: password,
          demolink: 'https://password-generator-app1.netlify.app/',
@@ -81,25 +75,7 @@ function Projects() {
          technologies: ['React', 'JavaScript', 'CSS']
       },  
       {
-         id: 8, 
-         title: 'To-Do App',
-         src: todo,
-         demolink: 'https://my-todoapp-react1.netlify.app/',
-         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/reduxtoolkitTodo',
-         description: 'A to-do app to help users manage their tasks effectively.',
-         technologies: ['React', 'Redux Toolkit', 'CSS']
-      },  
-      {
-         id: 9, 
-         title: 'Infinite Color Generator',
-         src: infinite,
-         demolink: 'https://infinite-color.netlify.app',
-         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/Unlimited%20colour',
-         description: 'An infinite color generator that provides random colors on each click.',
-         technologies: ['JavaScript', 'HTML5', 'CSS']
-      },  
-      {
-         id: 10, 
+         id: 7, 
          title: 'Webpage Design',
          src: webpage,
          demolink: 'https://envatopage.netlify.app/',
@@ -108,7 +84,63 @@ function Projects() {
          technologies: ['React', 'CSS', 'HTML5']
       },  
       {
+         id: 8, 
+         title: 'Tic-Tac-Toe Game',
+         src: tic,
+         demolink: 'https://tic-tac-toe-go.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/Tic_Tac_Toe',
+         description: 'A classic tic-tac-toe game built with React.',
+         technologies: ['React', 'JavaScript', 'CSS']
+      }, 
+      {
+         id: 9, 
+         title: 'Snake Game',
+         src: snake,
+         demolink: 'https://snake-game-minia.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/SnakeGame',
+         description: 'A classic snake game built with JavaScript and HTML5 Canvas.',
+         technologies: ['JavaScript', 'HTML5', 'CSS']
+      },
+      {
+         id: 10, 
+         title: 'BMI Calculator',
+         src: bmi,
+         demolink: 'https://bmi-calculator-11.netlify.app/',
+         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/BMI',
+         description: 'A BMI calculator that helps users determine their Body Mass Index.',
+         technologies: ['JavaScript', 'HTML5', 'CSS']
+      },  
+      {
          id: 11, 
+         title: 'Calculator',
+         src: calc,
+         demolink: 'https://calculator-js12.netlify.app',
+         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/Calculator_1',
+         description: 'A simple calculator for performing basic arithmetic operations.',
+         technologies: ['JavaScript', 'HTML5', 'CSS']
+      },  
+      {
+         id: 12, 
+         title: 'Digital Clock',
+         src: clock,
+         demolink: 'https://digital-1-clock.netlify.app',
+         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/DigitalClock',
+         description: 'A digital clock displaying the current time in a user-friendly interface.',
+         technologies: ['JavaScript', 'HTML5', 'CSS']
+      },  
+        
+      {
+         id: 13, 
+         title: 'Infinite Color Generator',
+         src: infinite,
+         demolink: 'https://infinite-color.netlify.app',
+         githubLink: 'https://github.com/Deepakkr2003/PROJECT/tree/main/Unlimited%20colour',
+         description: 'An infinite color generator that provides random colors on each click.',
+         technologies: ['JavaScript', 'HTML5', 'CSS']
+      },  
+      
+      {
+         id: 14, 
          title: 'Guess a Number Game',
          src: guess,
          demolink: 'https://guess-a-no.netlify.app',
@@ -116,15 +148,7 @@ function Projects() {
          description: 'A number guessing game where users try to guess a randomly generated number.',
          technologies: ['JavaScript', 'HTML5', 'CSS']
       },  
-      {
-         id: 12, 
-         title: 'Tic-Tac-Toe Game',
-         src: tic,
-         demolink: 'https://tic-tac-toe-go.netlify.app/',
-         githubLink: 'https://github.com/Deepakkr2003/REACT/tree/main/Tic_Tac_Toe',
-         description: 'A classic tic-tac-toe game built with React.',
-         technologies: ['React', 'JavaScript', 'CSS']
-      },  
+       
   ]
   
   

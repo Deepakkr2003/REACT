@@ -1,14 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
 import css from '../assests/css.png'
 import github from '../assests/github.png'
-import graphql from '../assests/graphql.png'
 import html from '../assests/html.png'
 import js from '../assests/javascript.png'
 import react from '../assests/react.png'
-import nextjs from '../assests/nextjs.png'
 import node from '../assests/node.png'
 import tailwind from '../assests/tailwind.png'
+import express from '../assests/express-js.png'
+import git from '../assests/git.jpg'
+import mongodb from '../assests/mongodb.png'
+import mysql from '../assests/mysql.png'
+import postman from '../assests/postman.png'
+import rest from '../assests/rest.png'
+import python from '../assests/python.jpeg'
+import cpp from '../assests/c++.png'
+import netlify from '../assests/netlify.png'
+import redux from '../assests/redux.png'
 
 
 function Skills() {
@@ -46,28 +53,77 @@ function Skills() {
     },
     {
        id:6,
-       src:nextjs,
-       title:'Next JS',
-       style:'shadow-white'
+       src:node,
+       title:'Node JS',
+       style:'shadow-green-300'
     },
     {
        id:7,
-       src:graphql,
-       title:'Graphql',
-       style:'shadow-pink-400'
+       src:express,
+       title:'Express JS',
+       style:'shadow-yellow-500'
     },
     {
        id:8,
+       src:mongodb,
+       title:'MongoDB',
+       style:'shadow-green-800'
+    },
+    {
+       id:9,
        src:github,
        title:'Github',
        style:'shadow-gray-500'
     },
     {
-       id:9,
-       src:node,
-       title:'Node',
-       style:'shadow-green-300'
+       id:10,
+       src:git,
+       title:'Git',
+       style:'shadow-red-400'
     },
+    {
+       id:11,
+       src:cpp,
+       title:'C++',
+       style:'shadow-sky-500'
+    },
+    {
+       id:12,
+       src:python,
+       title:'Github',
+       style:'shadow-yellow-500'
+    },
+    {
+       id:13,
+       src:mysql,
+       title:'MySQL',
+       style:'shadow-orange-400'
+    },
+    {
+       id:14,
+       src:rest,
+       title:'RESTFUL API',
+       style:'shadow-blue-500'
+    },
+    {
+       id:15,
+       src:postman,
+       title:'Postman',
+       style:'shadow-orange-500'
+    },
+    {
+       id:16,
+       src:netlify,
+       title:'Netlify',
+       style:'shadow-teal-500'
+    },
+    {
+       id:16,
+       src:redux,
+       title:'Redux',
+       style:'shadow-purple-500'
+    },
+    
     
   ]
 

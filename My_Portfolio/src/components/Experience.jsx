@@ -41,34 +41,7 @@ function Experience() {
                         </dl>
                     </div>
                 </div>
-                <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
-                    <div className="px-4 py-5 sm:px-6">
-                        <h3 className="text-lg font-semibold leading-6 text-gray-900">
-                            Virtual Salesforce Developer intern
-                        </h3>
-                        <p className="mt-1 max-w-2xl text-sm text-gray-500">
-                            Company Name - SalesForce
-                        </p>
-                    </div>
-                    <div className="border-t border-gray-200 px-4 py-5 sm:px-6">
-                        <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8">
-                            <div className="sm:col-span-1">
-                                <dt className="text-sm font-medium text-gray-500">Location</dt>
-                                <dd className="mt-1 text-sm text-gray-900">Virtual (Remote)</dd>
-                                <a href='/Salesforce.pdf' className="mt-2 block text-blue-400 hover:text-lime-400">View Certificate</a>
-                            </div>
-                            <div className="sm:col-span-1">
-                                <dt className="text-sm font-medium text-gray-500">Responsibilities</dt>
-                                <dd className="mt-1 text-sm text-gray-900">
-                                    • Developing Salesforce Solutions, Writing Apex Code<br />
-                                    • Customizing Salesforce Configuration, Implementing Lightning Components & API,<br />
-                                    • VS Code Setup & CLI Setup, Organizational Setup, Relationship & Process Automation,<br />
-                                    • Types Of Flows & Security, Apex, Testing & Debugging
-                                </dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
+                
             </div>
     </div>
   )
